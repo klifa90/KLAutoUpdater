@@ -25,13 +25,15 @@ postUpdate() handles the logic invoked when there is no update available or upda
 
 ## XML Formatting and customization options
 
-versionCode (int) = versionCode to compare installation version
-apkUrl (string) = URL of latest APK
-default (string) = Informational patch notes to show to the user
-forceUpdate (boolean) = If the update should block the use of the application or not (if yes, the user will not be able to use the application before updating)
+* versionCode (int) = versionCode to compare installation version.
+* apkUrl (string) = URL of latest APK.
+* default (string) = Informational patch notes to show to the user.
+* forceUpdate (boolean) = If the update should block the use of the application or not (if yes, the user will not be able to use the application before updating).
 
 NOTE:
+
 If forceUpdate == true ,then 2 options will be available: download new version or quit application.
+
 If forceUpdate == false, then the 2 options will be: download new version or ignore.
 
 ## Strings
