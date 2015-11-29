@@ -13,13 +13,13 @@ KLAutoUpdater is a library that will automatically update the application using 
 1) Download KLAutoUpdater.java and add it to your project
 2) Simply use it like this:
 
-KLAutoUpdater autoUpdate = new KLAutoUpdater(MyActivity.this, StringWithURLOfHostedXMLFile, new KLAutoUpdater.PostUpdateCallback() {
+	KLAutoUpdater autoUpdate = new KLAutoUpdater(MyActivity.this, StringWithURLOfHostedXMLFile, new KLAutoUpdater.PostUpdateCallback() {
             @Override
             public void postUpdate() {
                 realizarLogin();
             }
         });
-autoUpdate.checkearUpdate();
+	autoUpdate.checkearUpdate();
 
 postUpdate() handles the logic invoked when there is no update available or update was ignored (because it blocks the UI).
 
@@ -38,17 +38,17 @@ If forceUpdate == false, then the 2 options will be: download new version or ign
 
 Customizables strings are
 
-titleProgressDownloading = "Descargando nueva actualización...";
-titleUpdateAvailable = "Actualización Disponible";
-titleForceUpdateAvailable = "Debe actualizar para poder continuar";
-titleErrorDownloading = "Error";
-contentErrorDownloading = "Hubo un error al descargar la actualización, intente nuevamente";
-neutralButtonError = "Aceptar";
-titleSearchingNewUpdate = "Por favor espere ...";
-contentSearchingNewUpdate = "Buscando actualización";
-downloadButton = "Descargar";
-ignoreButton = "Ignorar";
-exitButton = "Salir";
+	titleProgressDownloading = "Descargando nueva actualización...";
+	titleUpdateAvailable = "Actualización Disponible";
+	titleForceUpdateAvailable = "Debe actualizar para poder continuar";
+	titleErrorDownloading = "Error";
+	contentErrorDownloading = "Hubo un error al descargar la actualización, intente nuevamente";
+	neutralButtonError = "Aceptar";
+	titleSearchingNewUpdate = "Por favor espere ...";
+	contentSearchingNewUpdate = "Buscando actualización";
+	downloadButton = "Descargar";
+	ignoreButton = "Ignorar";
+	exitButton = "Salir";
 
 They can be changed one by one, or all together by calling autoUpdate.setTextStrings(...) 
 
