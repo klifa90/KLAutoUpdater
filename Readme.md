@@ -5,13 +5,13 @@ by Klifa
 KLAutoUpdater is a library that will automatically update the application using the latest version available.
 
 ## How it works
-1) It checks against a hosted .xml file which is the latest available version and compares it with the one installed.
-2) If there is a new version, obtains a download URL of the latest APK and starts downloading it.
-3) When it finish downloading, a prompt message for installing appears.
+1. It checks against a hosted .xml file which is the latest available version and compares it with the one installed.
+2. If there is a new version, obtains a download URL of the latest APK and starts downloading it.
+3. When it finish downloading, a prompt message for installing appears.
 
 ## How to add it in my project?
-1) Download KLAutoUpdater.java and add it to your project
-2) Simply use it like this:
+1. Download KLAutoUpdater.java and add it to your project
+2. Simply use it like this:
 
 	KLAutoUpdater autoUpdate = new KLAutoUpdater(MyActivity.this, StringWithURLOfHostedXMLFile, new KLAutoUpdater.PostUpdateCallback() {
             @Override
