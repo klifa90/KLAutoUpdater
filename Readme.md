@@ -55,6 +55,7 @@ Customizables strings are
 They can be changed one by one, or all together by calling autoUpdate.setTextStrings(...) 
 
 
+
 ## License
 
     The MIT License (MIT)
